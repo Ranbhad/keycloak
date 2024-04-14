@@ -13,12 +13,12 @@ import Keycloak from 'keycloak-js';
   Init Options
 */
 let initOptions = {
-  // url: 'https://kc2.ehrn.ehr.network/', // Using relative path for the proxy
-  // realm: 'ehrn-v2-sbx-ayushehr',
-  // clientId: 'Ayushehr',
-  url: 'http://localhost:8080/',
-  realm: 'myRealm',
-  clientId: 'react',
+  url: 'https://kc2.ehrn.ehr.network/', // Using relative path for the proxy
+  realm: 'ehrn-v2-sbx-ayushehr',
+  clientId: 'Ayushehr',
+  // url: 'http://localhost:8080/',
+  // realm: 'myRealm',
+  // clientId: 'react',
 }
 
 let kc = new Keycloak(initOptions);
@@ -107,7 +107,7 @@ function App() {
               label='Send HTTP Request'
               severity="success" />
 
-            <Button onClick={() => { kc.logout({ redirectUri: 'http://localhost:3000/' }) }}
+            <Button onClick={() => { kc.logout() }}
               className="m-1 custom-btn-style"
               label='Logout'
               severity="danger" />
