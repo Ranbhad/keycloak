@@ -10,12 +10,12 @@ const HomePage = () => {
 
   useEffect(() => {
     let initOptions = {
-      url: 'https://kc2.ehrn.ehr.network/',
-      realm: 'ehrn-v2-sbx-ayushehr',
-      clientId: 'Ayushehr',
-//         url: 'http://localhost:8080/',
-//   realm: 'myRealm',
-//   clientId: 'react',      
+    //   url: 'https://kc2.ehrn.ehr.network/',
+    //   realm: 'ehrn-v2-sbx-ayushehr',
+    //   clientId: 'Ayushehr',
+        url: 'http://localhost:8080/',
+  realm: 'myRealm',
+  clientId: 'react',      
       pkceMethod: 'S256'
     };
 
