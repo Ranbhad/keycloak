@@ -10,12 +10,12 @@ const HomePage = () => {
 
   useEffect(() => {
     let initOptions = {
-    //   url: 'https://kc2.ehrn.ehr.network/',
-    //   realm: 'ehrn-v2-sbx-ayushehr',
-    //   clientId: 'Ayushehr',
-        url: 'http://localhost:8080/',
-  realm: 'myRealm',
-  clientId: 'react',      
+      url: 'https://kc2.ehrn.ehr.network/',
+      realm: 'ehrn-v2-sbx-ayushehr',
+      clientId: 'Ayushehr',
+//         url: 'http://localhost:8080/',
+//   realm: 'myRealm',
+//   clientId: 'react',      
       pkceMethod: 'S256'
     };
 
@@ -86,7 +86,7 @@ const HomePage = () => {
               label='Login'
               severity="success" />
 
-            <Button onClick={() => { setInfoMessage(kc.token) }}
+            {/* <Button onClick={() => { setInfoMessage(kc.token) }}
               className="m-1 custom-btn-style"
               label='Show Access Token'
               severity="info" />
@@ -103,19 +103,19 @@ const HomePage = () => {
 
             <Button onClick={() => { kc.updateToken(10).then((refreshed) => { setInfoMessage('Token Refreshed: ' + refreshed.toString()) }, (e) => { setInfoMessage('Refresh Error') }) }}
               className="m-1 custom-btn-style"
-              label='Update Token (if about to expire)' />  {/** 10 seconds */}
+              label='Update Token (if about to expire)' />
 
             <Button onClick={callBackend}
               className='m-1 custom-btn-style'
               label='Send HTTP Request'
-              severity="success" />
+              severity="success" />*/}
 
             <Button onClick={() => { kc.logout() }}
               className="m-1 custom-btn-style"
               label='Logout'
-              severity="danger" />
+              severity="danger" /> 
 
-            <Button onClick={() => { setInfoMessage(kc.hasRealmRole('admin').toString()) }}
+            {/* <Button onClick={() => { setInfoMessage(kc.hasRealmRole('admin').toString()) }}
               className="m-1 custom-btn-style"
               label='has realm role "Admin"'
               severity="info" />
@@ -123,7 +123,7 @@ const HomePage = () => {
             <Button onClick={() => { setInfoMessage(kc.hasResourceRole('test').toString()) }}
               className="m-1 custom-btn-style"
               label='has client role "test"'
-              severity="info" />
+              severity="info" /> */}
 
           </div>
         </div>
