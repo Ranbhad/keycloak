@@ -5,16 +5,22 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@mui/styled-engine": "^5.15.14",
+    "@mui/x-charts": "^7.4.0",
+    "@react-keycloak/web": "^3.4.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.8",
-    "keycloak-js": "^24.0.2",
+    "bootstrap": "^5.3.3",
+    "keycloak-js": "^10.0.2",
     "primeflex": "^3.3.1",
     "primereact": "^10.6.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
@@ -43,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^3.0.0"
   }
 }
